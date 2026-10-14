@@ -1,8 +1,4 @@
-# .gitignore combinado para Unity, Godot y proyectos Node/Phaser
-
-# ---- Unity ----
-
-# Unity generated files
+# ---- Unity (si se usa como herramienta externa) ----
 
 Library/
 Temp/
@@ -35,7 +31,7 @@ sysinfo.txt
 # Unity Cache Server
 /Library/Cache/*
 
-# ---- Godot ----
+# ---- Godot (si se usa como herramienta externa) ----
 # Godot editor settings and temporary files
 .import/
 .export/
@@ -47,7 +43,7 @@ export_presets.cfg
 # For Godot 4, engine-specific
 .project
 
-# ---- Node / Phaser (JS) ----
+# ---- JavaScript / herramientas locales ----
 node_modules/
 dist/
 build/
@@ -59,3 +55,4 @@ yarn-error.log*
 # OS files
 .DS_Store
 Thumbs.db
+Desktop.ini

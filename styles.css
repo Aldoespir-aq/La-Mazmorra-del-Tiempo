@@ -1,0 +1,85 @@
+:root {
+  color-scheme: dark;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  background: #10121d;
+  color: #f5f0df;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 28px 20px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(134, 79, 48, .18), transparent 52%),
+    #10121d;
+}
+
+.game-shell { width: min(100%, 1060px); }
+
+.game-heading { margin: 0 0 18px 4px; }
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: #d99754;
+  font: 500 11px/1.4 "DM Mono", monospace;
+  letter-spacing: .2em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(25px, 5vw, 38px);
+  font-weight: 600;
+  letter-spacing: -.055em;
+}
+
+h1 span { color: #d99754; }
+
+.game-frame {
+  overflow: hidden;
+  border: 1px solid rgba(233, 188, 123, .32);
+  border-radius: 12px;
+  background: #171927;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .38), 0 0 50px rgba(180, 100, 44, .07);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  outline: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin-top: 16px;
+  color: #a8a7ad;
+  font: 12px "DM Mono", monospace;
+}
+
+kbd {
+  display: inline-block;
+  min-width: 22px;
+  padding: 3px 5px;
+  border: 1px solid #4d4a50;
+  border-radius: 4px;
+  background: #242530;
+  color: #f5f0df;
+  text-align: center;
+  font: inherit;
+}
+
+@media (max-width: 540px) {
+  body { padding: 20px 12px; }
+  footer { gap: 10px 14px; font-size: 10px; }
+}

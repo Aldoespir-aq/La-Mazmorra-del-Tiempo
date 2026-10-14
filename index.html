@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10121d">
+    <meta name="description" content="Atraviesa tres niveles de plataformas y trampas en La Mazmorra del Tiempo.">
+    <title>La Mazmorra del Tiempo</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="game-heading">
+        <p class="eyebrow">AVENTURA DE PLATAFORMAS</p>
+        <h1>La Mazmorra <span>del Tiempo</span></h1>
+      </header>
+      <section class="game-frame" aria-label="Videojuego La Mazmorra del Tiempo">
+        <canvas id="game" width="960" height="540" aria-label="Juego. Pulsa Enter para comenzar.">
+          Tu navegador no admite Canvas. Abre el juego con un navegador moderno.
+        </canvas>
+      </section>
+      <footer>
+        <span><kbd>A</kbd> <kbd>D</kbd> mover</span>
+        <span><kbd>↑</kbd> / <kbd>Espacio</kbd> saltar</span>
+        <span><kbd>R</kbd> reiniciar</span>
+      </footer>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
